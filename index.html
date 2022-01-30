@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BETTY Club</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/places.js" async="" defer=""></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly" async ></script>
+		
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="./">Maps</a></li>
+                    <li><a href="./generate-list.php">Add places via CSV</a></li>
+                    <li><a href="mailto:TomislavBombas@users.github.com">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </header>
+        <section>
+            <div class="wrapper" style=" padding: 60px;">
+                <h3 style="text-align: center;">When adding places via CSV fields are: name, address, city. </h3>
+            </div>
+        </section>
+        <!-- to be done later
+        <section>
+            <div class="wrapper">
+                <form id="pretraga">
+                    <input class="search-form" placeholder="Potražite najbližu apoteku" />
+                </form>
+            </div>
+        </section>
+        -->
+        <section>
+            <div class="wrapper">
+                <div class="col-2">
+                    <div id="places">
+
+                    </div>
+                    <div id="mapWrapper">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <footer style="margin-top:90px;"></footer>
+        <script src="js/maps.js" async defer></script>
+    </body>
+</html>
